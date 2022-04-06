@@ -1,0 +1,129 @@
+.background{
+    height: 100vh;
+    width: 100%;
+    background: rgb(212,175,55);
+    background: linear-gradient(0deg, rgba(212,175,55,1) 0%, rgba(212,175,55,0) 100%);
+    @include centra(center);
+    .square{ 
+        @include centra(space-between);
+        height: 95%;
+        width: 95%;
+        flex-direction: column;
+        background-color: $white;
+        //box-shadow: 0px -17px 100px -32px rgba(14, 14, 14, 0.66);
+        
+        .navigation{
+            @include centra(space-between);
+            width: 100%;
+            height: 70px;
+            background-color:$white;
+            .navigation__logo{
+               
+                
+                text-decoration: none;
+                img{
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+            .navigation__list{
+                width: 50%;
+                height: 100%;
+                margin-right: 20px;
+                @include centra(center);
+                list-style: none;
+                border-bottom: 2px solid $sixth ;
+
+                .navigation__element{
+                    @include centra(center);
+                    margin: 0 20px ;
+                    height: 60%;
+                    width: 15%;
+                    .navigation__link{
+                        color: $black;
+                        text-decoration: none;
+                        
+                    }
+                }
+            }
+        }
+        .main{
+            @include centra(space-around);
+            flex-direction: column;
+            height: calc(100% - 100px);
+            margin: 0 25px ;
+            .main__top{
+                @include centra(center);
+                height: 60% ;
+                
+                .main__firstSide{
+                    @include centra(center);
+                    flex-direction: column;
+                    margin-right: 30px;
+                    height: 100%;
+                    background-color: $white;
+                    width:50%;
+                   .main__text{
+                    
+                       .main__h1{
+                           padding: 10px;
+                       }
+                       .main__h3{
+                           font-size: 16px;
+                           padding: 10px;
+
+                       }
+                   }
+                   .main__btn{ 
+                       height: 40px;
+                       width: 100px;
+                       background-color: $sixth;
+                       border: 2px solid black;
+
+                       .main__linkPrice{
+                        text-decoration: none;
+                       }
+                   } 
+                }
+                .main__secondSide{
+                    @include centra(center);
+                    height: 80%;
+                    width:50%;
+                    .main__photo{
+                        width: 300px;
+                        height: 300px;
+
+                    }
+                }
+            }
+            
+               
+                .main__frameList{
+                    @include centra(center);
+                    list-style: none;
+                    
+                    width: 100%;
+                    height: 200px;
+                    background: rgb(0, 0, 0);
+                    margin: 10px;
+                    .main__frameElement{
+                        @include centra(center);
+                        color:$sixth;
+                        height: 100%;
+                        width: 100%;
+                        padding: 10px;
+                        border-left: 2px solid white;
+                        border-top: 2px solid white;
+                        border-bottom: 2px solid white;
+                        
+
+                    }
+                    li:nth-child(5){
+                        border-right: 2px solid white; 
+                    }
+                }
+            
+
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.contact{
+    @include centra(space-around);
+    height: 50vh;
+    width: 100%;
+    .contact__about{
+        @include centra(center);
+        flex-direction: column;
+        width: 35%;
+        height: 100%;
+        border-top: 2px solid black;
+        .contact__h2{
+            margin-bottom: 30px;
+        }
+        .contact__text{
+            width: 70%;
+        }
+    }
+    .contact__reg{
+        @include centra(center);
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        .contact__h2Reg{
+            margin-bottom: 30px;
+        }
+        .contact__textReg{
+            width: 80%;
+            
+        }
+    }
+    .contact__info{
+        @include centra(center);
+        flex-direction: column;
+        width: 35%;
+        height: 100%;
+        border-top: 2px solid black;
+        border-left: 2px solid black;
+        .contact__dane{
+            margin: 10px;
+        }
+    }
+    
+}

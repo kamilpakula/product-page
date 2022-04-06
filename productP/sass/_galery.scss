@@ -1,0 +1,41 @@
+.galery{
+    height: 100vh;
+    width: 100%;
+    background-color: $black;
+    @include centra(center);
+    flex-direction: column;
+    padding: 20px;
+    color:$fifthColor;
+    .galery__h1{
+        color: $secondColor;
+        margin: 10px;
+        
+    }
+    .galery__h4{
+        color: $fourthColor;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+    
+    .galery__main{
+        @include centra(center);
+        flex-direction: row;
+        width: 100%;
+
+        .galery__photos{
+        
+            @include centra(center);
+            flex-wrap: wrap;
+            width: 70%;
+            
+
+            .galery__img{
+                height: 200px;
+                width: 300px;
+                margin: 10px;
+                //border: 3px solid $secondColor;
+            }
+        }
+    }
+    
+}
